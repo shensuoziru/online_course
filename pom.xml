@@ -5,6 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>eureka</module>
+        <module>system</module>
+        <module>gateway</module>
+        <module>server</module>
     </modules>
 
     <parent>
@@ -46,6 +49,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.32</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ca.bytetube</groupId>
+                <artifactId>server</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
         </dependencies>
