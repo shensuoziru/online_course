@@ -1,17 +1,15 @@
 package ca.bytetube.server.domain;
 
-
 public class Test {
-
-    private String id;
+    private Integer id;
 
     private String name;
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -22,5 +20,16 @@ public class Test {
     public void setName(String name) {
         this.name = name;
     }
-}
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", name=").append(name);
+        sb.append("]");
+        return sb.toString();
+    }
+}
